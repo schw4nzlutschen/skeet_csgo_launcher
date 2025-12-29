@@ -190,7 +190,7 @@ int main() {
                 if (GetExitCodeThread(hThread, &exit_code) && exit_code != 0) {
                     std::cout << skCrypt("SUCCESS! DLL loaded at 0x") << std::hex << exit_code << std::dec << "\n";
 
-                    std::cout << skCrypt("Waiting 3 seconds for initialization...\n");
+                    std::cout << skCrypt("Waiting for initialization...\n");
                     std::this_thread::sleep_for(3000ms);
 
                     DWORD process_exit_code = 0;
